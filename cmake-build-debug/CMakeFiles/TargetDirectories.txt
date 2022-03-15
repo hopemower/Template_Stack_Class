@@ -1,0 +1,9 @@
+C:/Users/hopem/Documents/cs1410/6.5 template_stack/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/hopem/Documents/cs1410/6.5 template_stack/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/hopem/Documents/cs1410/6.5 template_stack/cmake-build-debug/src/CMakeFiles/mylib.dir
+C:/Users/hopem/Documents/cs1410/6.5 template_stack/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+C:/Users/hopem/Documents/cs1410/6.5 template_stack/cmake-build-debug/src/CMakeFiles/main.dir
+C:/Users/hopem/Documents/cs1410/6.5 template_stack/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
+C:/Users/hopem/Documents/cs1410/6.5 template_stack/cmake-build-debug/tests/CMakeFiles/rebuild_cache.dir
+C:/Users/hopem/Documents/cs1410/6.5 template_stack/cmake-build-debug/tests/CMakeFiles/main_test.dir
+C:/Users/hopem/Documents/cs1410/6.5 template_stack/cmake-build-debug/tests/CMakeFiles/edit_cache.dir
