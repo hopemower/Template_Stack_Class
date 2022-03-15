@@ -56,7 +56,7 @@ Stack<T, max_size>::Stack()
 template<typename T, int max_size>
 void Stack<T, max_size>::Push(T item)
 {
-    if(top_position_ == max_size)
+    if (top_position_ == max_size)
     {
         throw std::out_of_range("The stack is full, item was not added");
     }
@@ -76,7 +76,6 @@ Stack<T, max_size>::Stack(T item)
 {
     top_position_ = 0;
     Push(item);
-    stack_[top_position_] = item;
 }
 
 /**
@@ -90,13 +89,13 @@ Stack<T, max_size>::Stack(T item)
 template<typename T, int max_size>
 T Stack<T, max_size>::Pop()
 {
-    top_position_--;
-
-    if ((top_position_ + 1) == 0) {
+    if (top_position_ == 0) {
         throw std::out_of_range("The stack is empty, no item to show");
     }
 
-    T top_item = stack_[top_position_];
+    T top_item = stack_[top_position_ - 1];
+
+    top_position_--;
 
     return top_item;
 }
@@ -112,12 +111,12 @@ T Stack<T, max_size>::Pop()
 template<typename T, int max_size>
 T Stack<T, max_size>::Top() const
 {
-    T top_item = stack_[top_position_];
-
-    if(top_position_ == 0)
+    if (top_position_ == 0)
     {
         throw std::out_of_range("The stack is empty, no item to show");
     }
+
+    T top_item = stack_[top_position_ - 1];
 
     return top_item;
 }
@@ -154,7 +153,8 @@ bool Stack<T, max_size>::Empty() const
     if (top_position_ == 0)
     {
         return true;
-    } else
+    }
+    else
     {
         return false;
     }
@@ -174,7 +174,8 @@ bool Stack<T, max_size>::Full() const
     if (top_position_ == max_size)
     {
         return true;
-    } else
+    }
+    else
     {
         return false;
     }
